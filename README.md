@@ -6,4 +6,6 @@
  This time around I am going to work on scalabilty, starting smaller. Build a skateboard first instead of a rocketship. MVP style. 
 
  1. Get the API and server running to display a list of my songs from songs.json
+ 2. Add a function that will pick out a particular song by its id
+ 
 
