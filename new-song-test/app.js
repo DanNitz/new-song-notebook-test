@@ -20,6 +20,26 @@ router.get('/', function (req, res, next) {
         next(err);
     });
 });
+
+//create GET/search?id=number&name=string to search for songs by 'id' and/or 'name'
+router.get('/search', function (req, res, next) {
+    let searchObject = {
+        "id": req.query.id,
+        "name": req.query.name
+    };
+
+    songRepo.search(searchObject, function (data){
+        res.status(200).json({
+            "status": 200,
+            "statusText": "OK",
+            "message": "All songs retrieved.",
+            "data": data
+        });
+    }, function (err){
+        next(err);
+    });
+});
+
 //create a GET id to retrieve a single song by id
 router.get('/:id', function (req,res,next){
     songRepo.getById(req.params.id, function (data) {
