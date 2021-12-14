@@ -1,0 +1,30 @@
+[
+    {   "id": 1, 
+        "set": 1,
+        "tuning": "Drop D, Capo 2, Key of A", 
+        "c-o": "Original", 
+        "name": "Ain't Love Insane",
+        "intro": ["E","AM","E","Bm","AM","E"] 
+    },
+    {   "id": 2, 
+        "set": 1,
+        "tuning": "Standard, Capo 2, Key of A", 
+        "c-o": "Original", 
+        "name": "Cried",
+        "intro": ["D","AM"] 
+    },
+    {   "id": 3, 
+        "set": 1,
+        "tuning": "Standard, Capo 2, F# Blues", 
+        "c-o": "Cover", 
+        "name": "Jet Airliner",
+        "intro": ["F#m","E","B","F#m"] 
+    },
+    {   "id": 4, 
+        "set": 1,
+        "tuning": "Standard, Key of G", 
+        "c-o": "Original", 
+        "name": "There She Goes",
+        "intro": ["Em","GM","D","C"] 
+    }
+]
