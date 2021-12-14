@@ -25,6 +25,9 @@ router.get('/', function (req, res, next) {
 router.get('/search', function (req, res, next) {
     let searchObject = {
         "id": req.query.id,
+        "set": req.query.set,
+        "tuning": req.query.tuning,
+        "co": req.query.co,
         "name": req.query.name
     };
 

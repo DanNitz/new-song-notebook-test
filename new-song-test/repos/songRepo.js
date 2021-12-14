@@ -37,8 +37,13 @@ let songRepo = {
                 let songs = JSON.parse(data);
                 if (searchObject) {
                     songs = songs.filter(
-                        p => (searchObject.id ? p.id == searchObject.id : true) &&
-                        (searchObject.name ? p.name.toLowerCase().indexOf(searchObject.name.toLowerCase()) >= 0 : true));
+                        p => 
+                        (searchObject.id ? p.id == searchObject.id : true) &&
+                        (searchObject.set ? p.set == searchObject.set : true) &&
+                        (searchObject.tuning ? p.tuning.toLowerCase().indexOf(searchObject.tuning.toLowerCase()) >=0 :true) &&
+                        (searchObject.co ? p.co.toLowerCase().indexOf(searchObject.co.toLowerCase()) >=0 :true) && 
+                        (searchObject.name ? p.name.toLowerCase().indexOf(searchObject.name.toLowerCase()) >= 0 : true)
+                        );
                 }
                 resolve(songs);
             }
