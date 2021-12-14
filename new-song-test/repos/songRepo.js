@@ -43,7 +43,7 @@ let songRepo = {
                         (searchObject.tuning ? p.tuning.toLowerCase().indexOf(searchObject.tuning.toLowerCase()) >=0 :true) &&
                         (searchObject.co ? p.co.toLowerCase().indexOf(searchObject.co.toLowerCase()) >=0 :true) && 
                         (searchObject.name ? p.name.toLowerCase().indexOf(searchObject.name.toLowerCase()) >= 0 : true)
-                        );
+                    );
                 }
                 resolve(songs);
             }
