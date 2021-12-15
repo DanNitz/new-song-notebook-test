@@ -140,6 +140,20 @@ router.delete('/:id', function (req, res, next) {
         next(err);
     });
 });
+//adding a patch method to update partial data - will be the most useful in this song app, since our songs change all the time
+router.patch('/:id', function (req, res, next){
+    songRepo.getById(req.params.id, function (data) {
+        songRepo.update(req.body, req.params.id, function (data){
+            res.status(200).json({
+                "status": 200,
+                "statusText": "OK",
+                "message": "Song '" + req.params.id + "' has been patched",
+                "data": data
+            });
+        });
+    });
+});
+
 
 //configure router so all routes are prefixed with /api/v1
 app.use('/api/', router);

@@ -10,5 +10,6 @@
  3. Add an insert method to be able to input new songs
  4. Add a router put and update method to update our constantly changing songs
  5. Add a delete method/endpoint to delete songs
+ 6. Add the patch method to be able to update partial data (will be most important feature in my case!)
  
 
