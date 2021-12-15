@@ -84,7 +84,34 @@ router.post('/', function (req, res, next){
         next(err);
     });
 });
-
+//create a router PUT and update method so we can update our songs since they get changed so often
+router.put('/:id', function (req, res, next) {
+    songRepo.getById(req.params.id, function (data) {
+        if (data) {
+            songRepo.update(req.body, req.params.id, function (data) {
+                res.status(200).json({
+                    "status": 200,
+                    "statusText": "OK",
+                    "message": "The Song '" + req.params.id + "' has been updated!",
+                    "data": data
+                });
+            });
+        }
+        else {
+            res.status(404).json({
+                "status": 404,
+                "statusText": "Not Found",
+                "message": "The Song '" + req.params.id + "' could not be found.",
+                "error": {
+                    "code": "NOT_FOUND",
+                    "message": "The Song '" + req.params.id + "' could not be found."
+                }
+            });
+        }
+    }, function (err) {
+        next(err);
+    });
+});
 //configure router so all routes are prefixed with /api/v1
 app.use('/api/', router);
 

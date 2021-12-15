@@ -68,6 +68,29 @@ let songRepo = {
                 });
             }
         });
+    },
+    //for updating one of our songs
+    update: function (newData, id, resolve, reject) {
+        fs.readFile(FILE_NAME, function (err, data) {
+            if(err) {
+                reject(err);
+            }
+            else {
+                let songs = JSON.parse(data);
+                let song = songs.find(p => p.id == id);
+                if(song) {
+                    Object.assign(song, newData);
+                    fs.writeFile(FILE_NAME, JSON.stringify(songs), function(err){
+                        if(err) {
+                            reject(err);
+                        }
+                        else {
+                            resolve(newData);
+                        }
+                    });
+                }
+            }
+        });
     }
 };
 
