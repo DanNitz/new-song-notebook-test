@@ -112,6 +112,35 @@ router.put('/:id', function (req, res, next) {
         next(err);
     });
 });
+//create a router delete endpoint
+router.delete('/:id', function (req, res, next) {
+    songRepo.getById(req.params.id, function (data) {
+        if (data){
+            songRepo.delete(req.params.id, function (data) {
+                res.status(200).json({
+                    "status": 200,
+                    "statusText": "OK",
+                    "message": "The song '" + req.params.id + "' has been deleted.",
+                    "data": "Song '" + req.params.id + "' deleted."
+                });
+            });
+        }
+        else {
+            res.status(404).json({
+                "status": 404,
+                "statusText": "Not Found",
+                "message": "The song '" + req.params.id + "' could not be found.",
+                "error": {
+                    "code": "NOT_FOUND",
+                    "message": "The song '" + req.params.id + "' could not be found."
+                }
+            });
+        }
+    }, function (err) {
+        next(err);
+    });
+});
+
 //configure router so all routes are prefixed with /api/v1
 app.use('/api/', router);
 

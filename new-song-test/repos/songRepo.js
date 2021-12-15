@@ -91,6 +91,29 @@ let songRepo = {
                 }
             }
         });
+    },
+    //to delete a song
+    delete: function (id, resolve, reject) {
+        fs.readFile(FILE_NAME, function(err, data){
+            if (err) {
+                reject(err);
+            }
+            else {
+                let songs = JSON.parse(data);
+                let index = songs.findIndex(p => p.id ==id);
+                if (index != -1) {
+                    songs.splice(index, 1);
+                    fs.writeFile(FILE_NAME, JSON.stringify(songs), function (err){
+                        if(err){
+                            reject(err);
+                        }
+                        else {
+                            resolve(index);
+                        }
+                    });
+                }
+            }
+        });
     }
 };
 

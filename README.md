@@ -9,5 +9,6 @@
  2. Add a functions that will search out a particular song by its id, set, tuning, cover or original (co), and or name
  3. Add an insert method to be able to input new songs
  4. Add a router put and update method to update our constantly changing songs
+ 5. Add a delete method/endpoint to delete songs
  
 
