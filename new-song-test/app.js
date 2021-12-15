@@ -6,6 +6,8 @@ const songRepo = require('./repos/songRepo');
 //use the express router object for endpoints
 const router = express.Router();
 
+//configure the middleware to support JSON data parsing in request object
+app.use(express.json());
 
 //create GET to return a list of all songs
 router.get('/', function (req, res, next) {
@@ -69,7 +71,19 @@ router.get('/:id', function (req,res,next){
         next(err);
     });
 });
-
+//create a POST method in our router to add a new song
+router.post('/', function (req, res, next){
+    songRepo.insert(req.body, function(data){
+        res.status(201).json({
+            "status":201,
+            "statusText": "Song Created",
+            "message": "New Song Added.",
+            "data": data
+        });
+    }, function(err){
+        next(err);
+    });
+});
 
 //configure router so all routes are prefixed with /api/v1
 app.use('/api/', router);

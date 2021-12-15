@@ -48,6 +48,26 @@ let songRepo = {
                 resolve(songs);
             }
         });
+    },
+    //insert a new song func
+    insert: function (newData, resolve, reject) {
+        fs.readFile(FILE_NAME, function (err, data) {
+            if (err) {
+                reject(err);
+            }
+            else {
+                let songs = JSON.parse(data);
+                songs.push(newData);
+                fs.writeFile(FILE_NAME, JSON.stringify(songs), function (err) {
+                    if (err) {
+                        reject(err);
+                    }
+                    else {
+                        resolve(newData);
+                    }
+                });
+            }
+        });
     }
 };
 
