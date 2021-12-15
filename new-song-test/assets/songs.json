@@ -1,1 +1,67 @@
-[{"id":1,"set":1,"tuning":"Drop D, Capo 2, Key of A","co":"Original","name":"Ain't Love Insane","intro":["E mix","AM","E mixolydian","B dorian","A Major","E"]},{"id":2,"set":2,"tuning":"Standard, Capo 2, Key of A","co":"Original","name":"Cried","intro":["D","AM"]},{"id":3,"set":2,"tuning":"Standard, Capo 2, F# Blues","co":"Cover","name":"Jet Airliner","intro":["F#m","E","B","F#m"]},{"id":4,"set":1,"tuning":"Standard, Key of G","co":"Original","name":"There She Goes","intro":["Em","GM","D","C"]},{"id":5,"set":3,"tuning":"Standard","co":"Cover","name":"Last Dance Mary Jane","intro":["Am","G","D","Am"]}]
+[
+    {
+        "id": 1,
+        "set": 1,
+        "tuning": "Drop D, Capo 2, Key of A",
+        "co": "Original",
+        "name": "Ain't Love Insane",
+        "intro": [
+            "E mix",
+            "AM",
+            "E mixolydian",
+            "B dorian",
+            "A Major",
+            "E"
+        ]
+    },
+    {
+        "id": 2,
+        "set": 2,
+        "tuning": "Standard, Capo 2, Key of A",
+        "co": "Original",
+        "name": "Cried",
+        "intro": [
+            "D",
+            "AM"
+        ]
+    },
+    {
+        "id": 3,
+        "set": 2,
+        "tuning": "Standard, Capo 2, F# Blues",
+        "co": "Cover",
+        "name": "Jet Airliner",
+        "intro": [
+            "F#m",
+            "E",
+            "B",
+            "F#m"
+        ]
+    },
+    {
+        "id": 4,
+        "set": 1,
+        "tuning": "Standard, Key of G",
+        "co": "Original",
+        "name": "There She Goes",
+        "intro": [
+            "Em",
+            "GM",
+            "D",
+            "C"
+        ]
+    },
+    {
+        "id": 5,
+        "set": 3,
+        "tuning": "Standard",
+        "co": "Cover",
+        "name": "Last Dance Mary Jane",
+        "intro": [
+            "Am",
+            "G",
+            "D",
+            "Am"
+        ]
+    }
+]
