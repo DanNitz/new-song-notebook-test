@@ -26,6 +26,8 @@ const showAllSongs = () => {
         .then(res => res.json())
         .then(data => {
             console.log("Song API Data:");
+            const { }
+    
         })
 }
 
