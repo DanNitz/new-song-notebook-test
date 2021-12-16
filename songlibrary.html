@@ -19,34 +19,40 @@
                 <li><a href="#">Add New Song</a></li>
                 <li><a href="#">Edit Song</a></li>
                 <li><a href="songlibrary.html">Song Library</a></li>
-                <li><a href="#">Set Lists</a></li>
+                <li><a href="#">Delete Song</a></li>
                 <li><a href="#">About</a></li>
             </ul>
         </nav>
     </header>
     <div class="wrapper">
-        <!-- main-content -->
+        <!-- main-content (if i want to add anything above my controls) -->
         <div class="main-content">
-
             <div class="col-1">
-
             </div>
-
             <div class="col-2">
-                <h2 class="thin"></h2>
+            <h2 class="thin"></h2>
             </div>
-
         </div>
-        
-        <!-- Get all my songs button and display  -->
-        <div class="add-new-song bx-sdw">
+        <!-- Get all my songs button controls and display  -->
+        <div class="black-box bx-sdw">
             <h1 class="purple">Song Library</h1>
-            <div id="newSongInput" class="purple">
+            <div class="purple">
                 <div id="song-search">
-                      <button onclick="getAllSongs();">Get All Songs</button>
+                    <span id="library-ctrls">
+                    <button onclick="getAllSongs();"><h1>Get All Songs</h1></button><br>
+                        <button onclick="">Originals</button>
+                        <button onclick="">Covers</button><br>
+                        <button onclick=""><h2>Set 1</h2></button>
+                        <button onclick=""><h2>Set 2</h2></button>
+                        <button onclick=""><h2>Set 3</h2></button>
+                        <button onclick=""><h2>Set 4</h2></button>
+                        <button onclick=""><h2>Set 5</h2></button>
+                        <button onclick=""><h2>Others</h2></button>
+                    </span>
                 </div>
-
+                <div class="black-box bx-sdw">
                 <!--  a list of songs should show up here   -->
+                </div>
             </div>
             
         </div>
