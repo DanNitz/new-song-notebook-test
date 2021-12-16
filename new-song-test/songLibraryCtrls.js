@@ -1,5 +1,4 @@
 //Dom Objects
-
 const allSongsBtn = document.querySelector(".all-songs");
 const originalsBtn = document.querySelector(".originals");
 const coversBtn = document.querySelector(".covers");
@@ -12,7 +11,7 @@ const otherSongsBtn = document.querySelector(".other-songs");
 
 
 //const for my api to pull from 
-const baseApiUrl = "http://localhost:5000/api/";
+const url = "http://localhost:5000/api/";
 
 //functions
 
@@ -22,7 +21,13 @@ const baseApiUrl = "http://localhost:5000/api/";
  * 
 */
 
-const showAllSongs = () => {}
+const showAllSongs = () => {
+    fetch(url)
+        .then(res => res.json())
+        .then(data => {
+            console.log("Song API Data:");
+        })
+}
 
 /** 
  * 

@@ -32,7 +32,7 @@ button {
     padding: .1em;
     padding-left: 1em;
     padding-right: 1em;
-    border-radius: 15px;
+    border-radius: 5px;
     background: #096;
     color: white;
 }
@@ -74,15 +74,15 @@ button:hover {
 }
 
 .navigation {
-  margin-bottom: .75em;     
+  margin-bottom: 2em;     
 }
 
 .navigation li {
     background: #096;
-    border: solid 1px white;
+    border: solid 5px white;
     max-width: 40%;
     margin: 0 auto .5em;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 .title a,
