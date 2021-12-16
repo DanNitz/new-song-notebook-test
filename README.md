@@ -11,5 +11,7 @@
  4. Add a router put and update method to update our constantly changing songs
  5. Add a delete method/endpoint to delete songs
  6. Add the patch method to be able to update partial data (will be most important feature in my case!)
+ 7. Add my Song library page to begin on displaying all songs
+ 8. npm Install cors package and configuration 
  
 

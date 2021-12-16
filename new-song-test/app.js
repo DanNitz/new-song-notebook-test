@@ -2,12 +2,16 @@
 const express = require('express');
 const app = express();
 const songRepo = require('./repos/songRepo');
+let cors = require('cors');
 
 //use the express router object for endpoints
 const router = express.Router();
 
 //configure the middleware to support JSON data parsing in request object
 app.use(express.json());
+
+//configuring CORS
+app.use(cors());
 
 //create GET to return a list of all songs
 router.get('/', function (req, res, next) {
@@ -153,10 +157,30 @@ router.patch('/:id', function (req, res, next){
         });
     });
 });
-
-
 //configure router so all routes are prefixed with /api/v1
 app.use('/api/', router);
+
+//building an error function that works with the default express next callback with middleware
+function customErrorBuilder(err){
+    return {
+        "status": 500,
+        "statusText": "Internal Server Error",
+        "message": err.message,
+        "error": {
+            "errno": err.errno,
+            "call": err.syscall,
+            "code": "INTERNAL_SERVER_ERROR",
+            "message": err.message
+        }
+    };
+}
+
+
+
+//exception middleware configuration goes last between the (after)app.use router and (before)app.listen
+app.use(function (err,req,res,next){
+    res.status(500).json(customErrorBuilder(err));
+});
 
 //last thing to do to get server running - create server to listen on port 5000
 const server = app.listen(5000, function (){
