@@ -1,424 +1,349 @@
-/* CSS */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
-* {box-sizing: border-box;}
+/* Document
+   ========================================================================== */
 
-/* CSS Elements */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
 
-html, body {
-    height: 100%;
-}
-
-body {    
-  font-family: "Roboto", sans-serif;
-  display: flex;
-  flex-direction: column;
-}
-
-a {text-decoration: none;}
-
-ul {
-  list-style: none;
-  margin: .75em;
-  padding: 0;
-}
-
-footer {
-    min-height: 6.25rem;
-    background-color: #096;
-}
-
-button {
-    padding: .75em;
-    border-radius: 15px;
-    background: #096;
-    color: white;
-}
-
-button:hover {
-    box-shadow: .2em .2em .8em #669;
-    background: white;
-    color: #096;
-}
-
-/* Wrapper */
-
-.wrapper {
-    flex: 1 0 auto;
-}
-
-
-/* theme text colors, font weight, other styles */
-
-.thin {font-weight: 100;}
-
-.purple {color: #669;}
-
-.white {color: white;}
-
-.green {color: #096;}
-
-.bx-sdw {box-shadow: .2em .5em .8em #669;}
-
-.bd-rad {border-radius: 5px;}
-
-/* Navigation */
-
-.logo {
-    max-height: 7.5em;
-    align-content: center;
+ html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+  }
+  
+  /* Sections
+     ========================================================================== */
+  
+  /**
+   * Remove the margin in all browsers.
+   */
+  
+  body {
+    margin: 0;
+  }
+  
+  /**
+   * Render the `main` element consistently in IE.
+   */
+  
+  main {
     display: block;
-    margin: auto;
-}
-
-.navigation {
-  margin-bottom: .75em;     
-}
-
-.navigation li {
-    background: #096;
-    border: solid 1px white;
-    max-width: 40%;
-    margin: 0 auto .5em;
-    border-radius: 3px;
-}
-
-.title a,
-.navigation a {
-  display: block;
-  padding: .25em 1em;
-  text-align: center;
-  color: white;
-}
-
-.navigation li a:hover {
-    background-color: white;
-    color: #096;
-}
-
-.nav-header {
-  background-color: #096;
-  box-shadow: 0 .3em .8em #669;
-  z-index: 100;
-}
-
-/* main content section home page */
-
-.col-1 {margin: 1em;}
-
-.main-img {
-    max-height: 650px;
-    max-width: 100%;
-    display: block;
-    margin: auto;
-}
-
-.col-2 {
-    font-size: .9rem;
-    color: #096;
-    text-align: center;
-    margin: auto;
-    width: 80%;
-}
-
-/* adding a new song to database */
-
-.add-new-song {
-    display: block;
-    margin: 1em 3em;
-    text-align: center;
-    border: solid .75em rgb(0, 0, 0);
-    border-radius: 0em;
-    background-color: #e7eae9;
-}
-
-#newSongInput {margin: 1em;}
-#editSongInput {margin: 1em;}
-
-.add-song button {margin: 1em;}
-
-/*
-=======================
-About Page
-=======================
-*/
-
-.main-content-about {
-    margin-bottom: 2em;
-}
-
-.abt-img-1 {
-    width: 100%;
-    height: 700px;
-    background-image: url("");
-    background-size: cover;
-}
-
-.abt-text-container-1 {
-    text-align: center;
-    font-size: 1.15em;
-    background: rgba(100,100,100,.8);
+  }
+  
+  /**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+  
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+  
+  /* Grouping content
+     ========================================================================== */
+  
+  /**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+  
+  hr {
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+    overflow: visible; /* 2 */
+  }
+  
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+  
+  pre {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+  }
+  
+  /* Text-level semantics
+     ========================================================================== */
+  
+  /**
+   * Remove the gray background on active links in IE 10.
+   */
+  
+  a {
+    background-color: transparent;
+  }
+  
+  /**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+  
+  abbr[title] {
+    border-bottom: none; /* 1 */
+    text-decoration: underline; /* 2 */
+    text-decoration: underline dotted; /* 2 */
+  }
+  
+  /**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+  
+  b,
+  strong {
+    font-weight: bolder;
+  }
+  
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+  
+  code,
+  kbd,
+  samp {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+  }
+  
+  /**
+   * Add the correct font size in all browsers.
+   */
+  
+  small {
+    font-size: 80%;
+  }
+  
+  /**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+  
+  sub,
+  sup {
+    font-size: 75%;
+    line-height: 0;
     position: relative;
-    top: 62%;
-    margin: 1em;
-}
-
-.abt-img-1 p {
-    padding: .5em;
-}
-
-.main-content-about h1 {
-    margin-left: .75em;
-    text-align: center;
-}
-
-.abt-sec-2 {
-    margin: 1em;
-    display: flex;
-}
-
-.abt-sec-3 {
-    display: block;
-    margin: 2em;
-    text-align: center;
-    font-size: .75rem;
-}
-
-.abt-img-3,
-.abt-img-2 {
-    width: 95%;
-    display: block;
-    margin: auto;
-}
-
-
-/*
-=======================
-Packages Page
-=======================
-*/
-
-.main-content-packages {
-    margin: 1em;
-    padding: 1em;
-    text-align: center;
-}
-
-.main-content-packages h1{
-    background-color: #d9fff2;
-    padding: .5em;
-    margin: .5em 1em;
-    color: #096;
-    border-radius: 1em;
-    font-size: 1.75rem;
-}
-
-.pac-col-1,
-.pac-col-2{
-    background-color: #096;
-    border: solid #d9fff2 .75em;
-    border-radius: 3em;
-    margin: 1em;
-    padding: .5em;
-    font-size: 1.15rem;
-}
-
-.pac-col-1 ul,
-.pac-col-2 ul {
-    text-align: left;
-    list-style: disc;
-    margin: 1em;
-}
-
-/*
-=======================
-Form Styles
-=======================
-*/
-
-form {
-    margin: 2em;
-}
-
-input,textarea,label{
-    display: block;
-    padding: .75em;
-    width: 100%;
-    border-radius: 1em;
-}
-
-input {
-   width: 100% 
-}
-
-textarea{
-    margin-bottom: 1em;
-}
-
-label {
-    font-weight: 400;
-    padding: .75em 0;
-    color: #096
-}
-
-.main-content-contact {
-    display: block;
-    margin: auto;
-}
-.main-content-contact h1{
-    text-align: center;
-}
-
-#song-input-form{
-    max-width: 438px;
-    display: block;
-    margin: auto;
-    margin-bottom: 1em;
-}
-
-#form-btn {
-    display: block;
-    margin: auto;
-}
-
-
-
-/* footer section */
-
-#copyright{ 
-    color: white;
-    margin-left: 1em;
-    position: relative;
-    top: 40%;
-}
-
-.icn {
-    display: inline-block;
-    width: 80px;
-    height: 80px;
-    margin-top: 10px;
-    margin-left: 5px;
-}
-
-.fb {
-    position: absolute;
-    right: 5px;
-}
-.insta {
-    position: absolute;
-    right: 90px;
-}
-
-/*media query section*/
-
-@media (min-width:769px) {
-
-.main-content {
-  padding-top: 7.5em;      
-  }    
-.main-content-about {
-  padding-top: 6.5em;      
-  }    
-.main-content-packages {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  padding-top: 8em;      
-  }    
-.main-content-contact{
-  padding-top: 8em;      
-  }    
-    
-.nav-header,
-.navigation,
-.logo,
-.main-content {
-  display: flex;
-  }   
-
-.nav-header {
-  flex-direction: row;
-  justify-content: space-between;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  } 
-
-.navigation {
-  margin-top: 2.75em;
-  }    
-
-.navigation a {
-  padding: .5em 2em;
-  }    
-    
-.navigation li {
-  margin-right: .5em;  
-  }   
-    
-.col-1 {
-  width: 40%;    
-  margin-right: 1em;
-  }    
-    
-.col-2 {
-    font-size: 1.15rem;
-    width: 60%;
-    margin-right: 1em;
-    margin-left: 1em;
-  }        
-    
-.mantra-div {
-    width: 75%;
-    display:block;
-    margin: 1em auto;
-    }    
-    
-/* about page  */
-    
-.abt-text-container-1 {
-    margin-left: 20%;
-  } 
-
-.main-content-about h1 {
-    font-size: 3rem;
+    vertical-align: baseline;
   }
-    
-.abt-img-3, 
-.abt-img-2 {
-    width: 90%;
-  }    
-    
-.abt-sec-3{
-    font-size: 1.1rem;    
-    }    
-    
-/* packages page  */
-
-.main-content-packages h1{
-    font-size: 2.5rem;
+  
+  sub {
+    bottom: -0.25em;
   }
-    
-.pac-col-1,
-.pac-col-2 {
-    width: 75%;
-    margin: 2em auto 1em;
- } 
-    
-    
-@media (min-width:1024px) {
-    
-.col-2 {
-    width: 55%;
+  
+  sup {
+    top: -0.5em;
   }
-.abt-text-container-1 {
-        font-size: 1.3rem;
-        margin-left: 30%;
-    } 
-
-.pac-col-1 ul,
-.pac-col-2 ul {
-    margin-left: 4em;
-    }
-    
-	}
-}
+  
+  /* Embedded content
+     ========================================================================== */
+  
+  /**
+   * Remove the border on images inside links in IE 10.
+   */
+  
+  img {
+    border-style: none;
+  }
+  
+  /* Forms
+     ========================================================================== */
+  
+  /**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+  
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+    margin: 0; /* 2 */
+  }
+  
+  /**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+  
+  button,
+  input { /* 1 */
+    overflow: visible;
+  }
+  
+  /**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+  
+  button,
+  select { /* 1 */
+    text-transform: none;
+  }
+  
+  /**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+  
+  button,
+  [type="button"],
+  [type="reset"],
+  [type="submit"] {
+    -webkit-appearance: button;
+  }
+  
+  /**
+   * Remove the inner border and padding in Firefox.
+   */
+  
+  button::-moz-focus-inner,
+  [type="button"]::-moz-focus-inner,
+  [type="reset"]::-moz-focus-inner,
+  [type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+  }
+  
+  /**
+   * Restore the focus styles unset by the previous rule.
+   */
+  
+  button:-moz-focusring,
+  [type="button"]:-moz-focusring,
+  [type="reset"]:-moz-focusring,
+  [type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+  }
+  
+  /**
+   * Correct the padding in Firefox.
+   */
+  
+  fieldset {
+    padding: 0.35em 0.75em 0.625em;
+  }
+  
+  /**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+  
+  legend {
+    box-sizing: border-box; /* 1 */
+    color: inherit; /* 2 */
+    display: table; /* 1 */
+    max-width: 100%; /* 1 */
+    padding: 0; /* 3 */
+    white-space: normal; /* 1 */
+  }
+  
+  /**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+  
+  progress {
+    vertical-align: baseline;
+  }
+  
+  /**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+  
+  textarea {
+    overflow: auto;
+  }
+  
+  /**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+  
+  [type="checkbox"],
+  [type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+  }
+  
+  /**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+  
+  [type="number"]::-webkit-inner-spin-button,
+  [type="number"]::-webkit-outer-spin-button {
+    height: auto;
+  }
+  
+  /**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+  
+  [type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    outline-offset: -2px; /* 2 */
+  }
+  
+  /**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+  
+  [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  
+  /**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+  
+  ::-webkit-file-upload-button {
+    -webkit-appearance: button; /* 1 */
+    font: inherit; /* 2 */
+  }
+  
+  /* Interactive
+     ========================================================================== */
+  
+  /*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+  
+  details {
+    display: block;
+  }
+  
+  /*
+   * Add the correct display in all browsers.
+   */
+  
+  summary {
+    display: list-item;
+  }
+  
+  /* Misc
+     ========================================================================== */
+  
+  /**
+   * Add the correct display in IE 10+.
+   */
+  
+  template {
+    display: none;
+  }
+  
+  /**
+   * Add the correct display in IE 10.
+   */
+  
+  [hidden] {
+    display: none;
+  }
