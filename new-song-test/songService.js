@@ -17,3 +17,6 @@ function getAllSongs() {
     req.open("GET", URL);
     req.send();
 }
+
+
+//function the forEach that creates 

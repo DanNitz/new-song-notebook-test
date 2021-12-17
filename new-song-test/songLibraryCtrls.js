@@ -18,7 +18,20 @@ const url = "http://localhost:5000/api/";
 /** 
  * 
  * Get allSongsBtn click
- * 
+ *write a function that accepts an array of songs and sets them into the dom
+ create an element then append that element to another  
+
+ finding the div that we what put into
+ then create a new element, set content for additoional subelement to put that into the 
+
+
+ songArr.forEach(function (song) {
+     
+ })
+
+
+
+
 */
 
 const showAllSongs = () => {
