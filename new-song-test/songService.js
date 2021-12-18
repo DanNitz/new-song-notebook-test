@@ -9,20 +9,26 @@ function getAllSongs() {
     req.onreadystatechange = function () {
         if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
             let response = JSON.parse(this.response);
-            console.log(response.status);
-            console.log(response.statusText);
-            console.log(response.data);
-            console.log(response.data.length);
+            console.log(response);
+            let songsArr = [response.data];
+            console.log(songsArr);
+            // console.log(response.status);
+            // console.log(response.data);
+            // console.log(response.data[3]);
+            // console.log(response.data.length);
+            
         }
     };
     req.open("GET", URL);
-    req.addEventListener("load", display);
+    req.addEventListener("load", displayAllSongs);
     req.send();
 }
-
-function display(){
-    document.getElementById('song-display').innerText = this.responseText;
+//display all songs function 
+function displayAllSongs(){
+    document.getElementById('song-display').innerText = this.response;
 }
+
+
 
 /** 
  * my data lives in the above response.data? try it
