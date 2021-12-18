@@ -5,6 +5,11 @@
 
  This time around I am going to work on scalabilty, starting smaller. Build a skateboard first instead of a rocketship. MVP style. 
 
+ Getting the app Started
+ A. Navigate into the new-song-test folder
+ B. then run 'npm install' to install dependencies
+ C. then run 'npm start' to get the app/server up and running
+
  1. Get the API and server running to display a list of my songs from songs.json
  2. Add a functions that will search out a particular song by its id, set, tuning, cover or original (co), and or name
  3. Add an insert method to be able to input new songs
@@ -15,6 +20,6 @@
  8. npm install cors package and configuration 
  9. Work on xhr requests for getAllSongs() and getSet()
  10. Work on my displayAllSongs() using a while loop and forEach
- 
+
  
 
