@@ -78,5 +78,20 @@
             "AM",
             "E mix"
         ]
+    },
+    {
+        "id": 7,
+        "set": 1,
+        "tuning": "Drop D, Capo 2, Key of A",
+        "co": "Original",
+        "name": "new sober",
+        "intro": [
+            "E mix",
+            "AM",
+            "E mix",
+            "Bm",
+            "AM",
+            "E mix"
+        ]
     }
 ]

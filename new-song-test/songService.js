@@ -10,22 +10,47 @@ function getAllSongs() {
         if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
             let response = JSON.parse(this.response);
             console.log(response);
-            let songsArr = [response.data];
+            let songsArr = response.data;
             console.log(songsArr);
             // console.log(response.status);
             // console.log(response.data);
             // console.log(response.data[3]);
             // console.log(response.data.length);
-            
+            displayAllSongs(songsArr);        
         }
     };
     req.open("GET", URL);
-    req.addEventListener("load", displayAllSongs);
     req.send();
 }
+//check debug on dev tools for scope reference
 //display all songs function 
-function displayAllSongs(){
-    document.getElementById('song-display').innerText = this.response;
+
+function displayAllSongs(songsArr){
+   let listElement = document.getElementById('song-display');
+
+   songsArr.forEach(function(song){
+    //each element is inside of container variable
+    //create elements, add context, append to dom
+    let container = document.createElement("div");
+    let name = document.createElement("h4");
+    let set = document.createElement("div");
+    let tuning = document.createElement("div");
+    let co = document.createElement("div");
+    let intro = document.createElement("div");
+
+    name.innerText = song.name;
+    set.innerText = song.set;
+    tuning.innerText = song.tuning;
+    co.innerText = song.co;
+    intro.innerText = song.intro;
+
+    container.append(name, set, tuning, co, intro);
+    listElement.append(container);
+
+   });
+
+
+
 }
 
 
