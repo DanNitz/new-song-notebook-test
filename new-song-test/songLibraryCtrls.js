@@ -1,121 +1,121 @@
-//Dom Objects
-const allSongsBtn = document.querySelector(".all-songs");
-const originalsBtn = document.querySelector(".originals");
-const coversBtn = document.querySelector(".covers");
-const set1Btn = document.querySelector(".set-1");
-const set2Btn = document.querySelector(".set-2");
-const set3Btn = document.querySelector(".set-3");
-const set4Btn = document.querySelector(".set-4");
-const set5Btn = document.querySelector(".set-5");
-const otherSongsBtn = document.querySelector(".other-songs");
+// //Dom Objects
+// const allSongsBtn = document.querySelector(".all-songs");
+// const originalsBtn = document.querySelector(".originals");
+// const coversBtn = document.querySelector(".covers");
+// const set1Btn = document.querySelector(".set-1");
+// const set2Btn = document.querySelector(".set-2");
+// const set3Btn = document.querySelector(".set-3");
+// const set4Btn = document.querySelector(".set-4");
+// const set5Btn = document.querySelector(".set-5");
+// const otherSongsBtn = document.querySelector(".other-songs");
 
 
-//const for my api to pull from 
-const url = "http://localhost:5000/api/";
+// //const for my api to pull from 
+// const url = "http://localhost:5000/api/";
 
-//functions
+// //functions
 
-/** 
- * 
- * Get allSongsBtn click
- *write a function that accepts an array of songs and sets them into the dom
- create an element then append that element to another  
+// /** 
+//  * 
+//  * Get allSongsBtn click
+//  *write a function that accepts an array of songs and sets them into the dom
+//  create an element then append that element to another  
 
- finding the div that we what put into
- then create a new element, set content for additoional subelement to put that into the 
+//  finding the div that we what put into
+//  then create a new element, set content for additoional subelement to put that into the 
 
 
- songArr.forEach(function (song) {
+//  songArr.forEach(function (song) {
      
- })
+//  })
 
-*/
+// */
 
-const showAllSongs = () => {
-    fetch(url)
-        .then(res => res.json())
-        .then(data => {
-            console.log("Song API Data:");
-            const { }
+// const showAllSongs = () => {
+//     fetch(url)
+//         .then(res => res.json())
+//         .then(data => {
+//             console.log("Song API Data:");
+//             const { }
     
-        })
-}
+//         })
+// }
 
-/** 
- * 
- * Get originalsBtn click
- * 
-*/
+// /** 
+//  * 
+//  * Get originalsBtn click
+//  * 
+// */
 
-const showOriginals = () => {}
+// const showOriginals = () => {}
 
-/** 
- * 
- * Get coversBtn click
- * 
-*/
+// /** 
+//  * 
+//  * Get coversBtn click
+//  * 
+// */
 
-const showCovers = () => {}
+// const showCovers = () => {}
 
-/** 
- * 
- * Get set1Btn click
- * 
-*/
+// /** 
+//  * 
+//  * Get set1Btn click
+//  * 
+// */
 
-const showSet1 = () => {}
+// const showSet1 = () => {}
 
-/** 
- * 
- * Get set2Btn click
- * 
-*/
+// /** 
+//  * 
+//  * Get set2Btn click
+//  * 
+// */
 
-const showSet2 = () => {}
+// const showSet2 = () => {}
 
-/** 
- * 
- * Get set3Btn click
- * 
-*/
+// /** 
+//  * 
+//  * Get set3Btn click
+//  * 
+// */
 
-const showSet3 = () => {}
+// const showSet3 = () => {}
 
-/** 
- * 
- * Get set4Btn click
- * 
-*/
+// /** 
+//  * 
+//  * Get set4Btn click
+//  * 
+// */
 
-const showSet4 = () => {}
+// const showSet4 = () => {}
 
-/** 
- * 
- * Get set5Btn click
- * 
-*/
+// /** 
+//  * 
+//  * Get set5Btn click
+//  * 
+// */
 
-const showSet5 = () => {}
+// const showSet5 = () => {}
 
-/** 
- * 
- * Get otherSongsBtn click
- * 
-*/
+// /** 
+//  * 
+//  * Get otherSongsBtn click
+//  * 
+// */
 
-const showOtherSongs = () => {}
+// const showOtherSongs = () => {}
 
-/* ***************
- * Event Listeners  
-*/
+// /* ***************
+//  * Event Listeners  
+// */
 
-allSongsBtn.addEventListener('click', showAllSongs);
-originalsBtn.addEventListener('click', showOriginals);
-coversBtn.addEventListener('click', showCovers);
-set1Btn.addEventListener('click', showSet1);
-set2Btn.addEventListener('click', showSet2);
-set3Btn.addEventListener('click', showSet3);
-set4Btn.addEventListener('click', showSet4);
-set5Btn.addEventListener('click', showSet5);
-otherSongsBtn.addEventListener('click', showOtherSongs);
+// allSongsBtn.addEventListener('click', showAllSongs);
+// originalsBtn.addEventListener('click', showOriginals);
+// coversBtn.addEventListener('click', showCovers);
+// set1Btn.addEventListener('click', showSet1);
+// set2Btn.addEventListener('click', showSet2);
+// set3Btn.addEventListener('click', showSet3);
+// set4Btn.addEventListener('click', showSet4);
+// set5Btn.addEventListener('click', showSet5);
+// otherSongsBtn.addEventListener('click', showOtherSongs);
 

@@ -63,5 +63,20 @@
             "D",
             "Am"
         ]
+    },
+    {
+        "id": 6,
+        "set": 1,
+        "tuning": "Drop D, Capo 2, Key of A",
+        "co": "Original",
+        "name": "LightHouse",
+        "intro": [
+            "E mix",
+            "AM",
+            "E mix",
+            "Bm",
+            "AM",
+            "E mix"
+        ]
     }
 ]
