@@ -22,11 +22,44 @@ function getAllSongs() {
     req.open("GET", URL);
     req.send();
 }
+//getting Specific Set songs
+function getSet(setNumber){
+    console.log("GET Specific SET SONGS");
+
+    let req = new XMLHttpRequest();
+    req.onreadystatechange = function () {
+        if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+            let response = JSON.parse(this.response);
+            console.log(response);
+            let songsArr = response.data.filter(function(song){
+                if(song.set === setNumber){
+                    return true;
+                }
+                else {
+                    return false;
+                }
+            });
+            console.log(songsArr);
+            // console.log(response.status);
+            // console.log(response.data);
+            // console.log(response.data[3]);
+            // console.log(response.data.length);
+            displayAllSongs(songsArr);        
+        }
+    };
+    req.open("GET", URL);
+    req.send();
+}
 //check debug on dev tools for scope reference
+// 
 //display all songs function 
 
 function displayAllSongs(songsArr){
    let listElement = document.getElementById('song-display');
+
+    while(listElement.lastElementChild){
+        listElement.removeChild(listElement.lastElementChild);
+    }
 
    songsArr.forEach(function(song){
     //each element is inside of container variable
