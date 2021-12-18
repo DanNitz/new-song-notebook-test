@@ -1,7 +1,8 @@
 'use strict'
-
+//api url
 const URL ="http://localhost:5000/api/";
 
+//xhr request to get api and call for my displayAllSongs()
 function getAllSongs() {
     console.log("GET ALL");
 
@@ -12,17 +13,14 @@ function getAllSongs() {
             console.log(response);
             let songsArr = response.data;
             console.log(songsArr);
-            // console.log(response.status);
-            // console.log(response.data);
-            // console.log(response.data[3]);
-            // console.log(response.data.length);
             displayAllSongs(songsArr);        
         }
     };
     req.open("GET", URL);
     req.send();
 }
-//getting Specific Set songs
+
+//xhr request and function getting my specific set lists
 function getSet(setNumber){
     console.log("GET Specific SET SONGS");
 
@@ -40,10 +38,6 @@ function getSet(setNumber){
                 }
             });
             console.log(songsArr);
-            // console.log(response.status);
-            // console.log(response.data);
-            // console.log(response.data[3]);
-            // console.log(response.data.length);
             displayAllSongs(songsArr);        
         }
     };
@@ -51,9 +45,8 @@ function getSet(setNumber){
     req.send();
 }
 //check debug on dev tools for scope reference
-// 
-//display all songs function 
-
+//breakpoints on dev tools is a good way for me to visualize what is going on
+//my displayAllSongs function 
 function displayAllSongs(songsArr){
    let listElement = document.getElementById('song-display');
 
@@ -82,27 +75,20 @@ function displayAllSongs(songsArr){
 
    });
 
-
-
 }
 
-
-
 /** 
- * my data lives in the above response.data? try it
- * using a forEach that will create an new element whether it be a div,ul,li etc..
+ * MY notes for reference:
+ * my data lives in the in xhr request response.data
+ * then put that in a songArr variable
+ * then i pass my songArr into displayAllSongs()
+ * using the forEach will create an new element whether it be a div,ul,li etc..
+ * then i can put those elements like name,set,tuning,co, and intro into my 
+ * container variable
  * 
- * Get allSongsBtn click
- *
- * write a function that accepts an array of songs and sets them into the dom
-    create an element then append that element to another  
-
- finding the div that we what put into
- then create a new element, set content for additoional subelement to put that into the 
-
- songArr.forEach(function (song) {
-     
- })
+ * 
+ * Then in my getSet function, I can reuse my displayAllSongs() call
+ * pass setNumber as a parameter in getSet(setNumber)
 *
 */
 

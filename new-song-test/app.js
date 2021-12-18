@@ -2,7 +2,6 @@
 const express = require('express');
 const app = express();
 const songRepo = require('./repos/songRepo');
-//const songLibCtrls = require('./songLibraryCtrls');
 let cors = require('cors');
 
 //use the express router object for endpoints
@@ -76,6 +75,7 @@ router.get('/:id', function (req,res,next){
         next(err);
     });
 });
+
 //create a POST method in our router to add a new song
 router.post('/', function (req, res, next){
     songRepo.insert(req.body, function(data){
@@ -89,6 +89,7 @@ router.post('/', function (req, res, next){
         next(err);
     });
 });
+
 //create a router PUT and update method so we can update our songs since they get changed so often
 router.put('/:id', function (req, res, next) {
     songRepo.getById(req.params.id, function (data) {
@@ -117,6 +118,7 @@ router.put('/:id', function (req, res, next) {
         next(err);
     });
 });
+
 //create a router delete endpoint
 router.delete('/:id', function (req, res, next) {
     songRepo.getById(req.params.id, function (data) {
@@ -145,6 +147,7 @@ router.delete('/:id', function (req, res, next) {
         next(err);
     });
 });
+
 //adding a patch method to update partial data - will be the most useful in this song app, since our songs change all the time
 router.patch('/:id', function (req, res, next){
     songRepo.getById(req.params.id, function (data) {
@@ -158,6 +161,7 @@ router.patch('/:id', function (req, res, next){
         });
     });
 });
+
 //configure router so all routes are prefixed with /api/v1
 app.use('/api/', router);
 
@@ -175,8 +179,6 @@ function customErrorBuilder(err){
         }
     };
 }
-
-
 
 //exception middleware configuration goes last between the (after)app.use router and (before)app.listen
 app.use(function (err,req,res,next){

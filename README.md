@@ -13,6 +13,8 @@
  6. Add the patch method to be able to update partial data (will be most important feature in my case!)
  7. Add my Song library page to begin GET on Songs  
  8. npm install cors package and configuration 
- 9. 
+ 9. Work on xhr requests for getAllSongs() and getSet()
+ 10. Work on my displayAllSongs() using a while loop and forEach
+ 
  
 
