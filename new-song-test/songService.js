@@ -58,7 +58,7 @@ function displayAllSongs(songsArr){
     //each element is inside of container variable
     //create elements, add context, append to dom
     let container = document.createElement("div");
-    let name = document.createElement("h4");
+    let name = document.createElement("h1");
     let set = document.createElement("div");
     let tuning = document.createElement("div");
     let co = document.createElement("div");

@@ -27,7 +27,7 @@
     },
     {
         "id": 3,
-        "set": 2,
+        "set": 3,
         "tuning": "Standard, Capo 2, F# Blues",
         "co": "Cover",
         "name": "Jet Airliner",
@@ -40,7 +40,7 @@
     },
     {
         "id": 4,
-        "set": 1,
+        "set": 4,
         "tuning": "Standard, Key of G",
         "co": "Original",
         "name": "There She Goes",
@@ -53,7 +53,7 @@
     },
     {
         "id": 5,
-        "set": 3,
+        "set": 5,
         "tuning": "Standard",
         "co": "Cover",
         "name": "Last Dance Mary Jane",
@@ -67,31 +67,322 @@
     {
         "id": 6,
         "set": 1,
-        "tuning": "Drop D, Capo 2, Key of A",
-        "co": "Original",
-        "name": "LightHouse",
+        "tuning": "Standard",
+        "co": "Cover",
+        "name": "Radioactive",
         "intro": [
-            "E mix",
-            "AM",
-            "E mix",
-            "Bm",
-            "AM",
-            "E mix"
+            "Em",
+            "G",
+            "D",
+            "A"
         ]
     },
     {
         "id": 7,
-        "set": 1,
-        "tuning": "Drop D, Capo 2, Key of A",
-        "co": "Original",
-        "name": "new sober",
+        "set": 2,
+        "tuning": "Standard, Capo 2, Key of A",
+        "co": "Cover",
+        "name": "Wild Horses",
         "intro": [
-            "E mix",
+            "C#m",
             "AM",
-            "E mix",
+            "C#m",
+            "AM",
             "Bm",
+            "D",
             "AM",
-            "E mix"
+            "E"
+        ]
+    },
+    {
+        "id": 8,
+        "set": 3,
+        "tuning": "Standard, Key of G",
+        "co": "Original",
+        "name": "Easy Street",
+        "intro": [
+            "GM",
+            "C Lydian",
+            "G",
+            "D Mix",
+            "C",
+            "G"
+        ]
+    },
+    {
+        "id": 9,
+        "set": 4,
+        "tuning": "Standard, E blues/mix",
+        "co": "Original",
+        "name": "Guilty",
+        "intro": [
+            "E"
+        ]
+    },
+    {
+        "id": 10,
+        "set": 5,
+        "tuning": "Standard, Transposed -2",
+        "co": "Cover",
+        "name": "Peace Love & Understanding",
+        "intro": [
+            "G",
+            "C",
+            "G",
+            "C",
+            "Em",
+            "A",
+            "D",
+            "C"
+        ]
+    },
+    {
+        "id": 11,
+        "set": 1,
+        "tuning": "Drop D, Capo 7, Key of A",
+        "co": "Cover",
+        "name": "Atlantic City",
+        "intro": [
+            "F# Aeo",
+            "A",
+            "D",
+            "A"
+        ]
+    },
+    {
+        "id": 12,
+        "set": 2,
+        "tuning": "Drop D",
+        "co": "Original",
+        "name": "Where Do We Start",
+        "intro": [
+            "D Mix/Maj"
+        ]
+    },
+    {
+        "id": 13,
+        "set": 3,
+        "tuning": "Drop D, Capo 2, Key of E",
+        "co": "Cover",
+        "name": "Gimme Shelter",
+        "intro": [
+            "C#m",
+            "E",
+            "F#m"
+        ]
+    },
+    {
+        "id": 14,
+        "set": 2,
+        "tuning": "Drop D, Capo 2, Key of D & E",
+        "co": "Original",
+        "name": "Hey Babe",
+        "intro": [
+            "G Lyd",
+            "A Mix"
+        ]
+    },
+    {
+        "id": 15,
+        "set": 1,
+        "tuning": "Standard, Capo 2",
+        "co": "Original",
+        "name": "Sun Arises",
+        "intro": [
+            "A",
+            "D",
+            "D",
+            "A",
+            "F#m",
+            "D",
+            "D",
+            "A"
+        ]
+    },
+    {
+        "id": 16,
+        "set": 2,
+        "tuning": "Drop D",
+        "co": "Cover",
+        "name": "Pink Cadillac",
+        "intro": [
+            "D",
+            "G",
+            "D",
+            "A7"
+        ]
+    },
+    {
+        "id": 17,
+        "set": 3,
+        "tuning": "Drop D, Capo 2, Key of E",
+        "co": "Original",
+        "name": "Southbound Train",
+        "intro": [
+            "EM lick",
+            "A Lyd",
+            "E"
+        ]
+    },
+    {
+        "id": 18,
+        "set": 4,
+        "tuning": "Standard, Key of C",
+        "co": "Original",
+        "name": "Long Way Down",
+        "intro": [
+            "F Lyd",
+            "C",
+            "Em",
+            "G"
+        ]
+    },
+    {
+        "id": 19,
+        "set": 5,
+        "tuning": "Standard",
+        "co": "Cover",
+        "name": "One Headlight",
+        "intro": [
+            "G",
+            "D",
+            "F#7",
+            "Bm",
+            "A"
+        ]
+    },
+    {
+        "id": 20,
+        "set": 1,
+        "tuning": "Standard, Capo 7, Key of A",
+        "co": "Cover",
+        "name": "Street Fighting Man",
+        "intro": [
+            "A",
+            "D",
+            "E"
+        ]
+    },
+    {
+        "id": 21,
+        "set": 2,
+        "tuning": "Standard, Transpose +5",
+        "co": "Cover",
+        "name": "Can't Find My Way Home",
+        "intro": [
+            "F",
+            "G",
+            "D",
+            "x4",
+            "C",
+            "B",
+            "Bb",
+            "D",
+            "F",
+            "G",
+            "D"
+        ]
+    },
+    {
+        "id": 22,
+        "set": 3,
+        "tuning": "Drop D",
+        "co": "Original",
+        "name": "Ain't No Love Song",
+        "intro": [
+            "C",
+            "(C#)",
+            "D"
+        ]
+    },
+    {
+        "id":23,
+        "set": 4,
+        "tuning": "Standard, Key of G",
+        "co": "Original",
+        "name": "Changes",
+        "intro": [
+            "GM",
+            "C Lydian"
+        ]
+    },
+    {
+        "id": 24,
+        "set": 5,
+        "tuning": "Standard, Key of C",
+        "co": "Original",
+        "name": "Forgotten",
+        "intro": [
+            "F Lyd",
+            "G",
+            "Am",
+            "F",
+            "G Mix"
+        ]
+    },
+    {
+        "id": 25,
+        "set": 1,
+        "tuning": "Standard, Capo 5, Key of C",
+        "co": "Original",
+        "name": "All About You",
+        "intro": [
+            "Am",
+            "Am",
+            "E",
+            "F"
+        ]
+    },
+    {
+        "id": 26,
+        "set": 2,
+        "tuning": "Standard",
+        "co": "Original",
+        "name": "Crying in the Rain",
+        "intro": [
+            "C",
+            "F",
+            "G",
+            "C",
+            "x2",
+            "C",
+            "F",
+            "Em",
+            "Am",
+            "F",
+            "G"
+        ]
+    },
+    {
+        "id": 27,
+        "set": 3,
+        "tuning": "Standard, Capo 5, Key of G",
+        "co": "Original",
+        "name": "It's Only Yourself",
+        "intro": [
+            "D Mix",
+            "D",
+            "(Bb)",
+            "C Lyd",
+            "D"
+        ]
+    },
+    {
+        "id": 28,
+        "set": 2,
+        "tuning": "Standard, Key of A",
+        "co": "Original",
+        "name": "Somebody's Fool",
+        "intro": [
+            "F# Aeo",
+            "A",
+            "Bm",
+            "F#",
+            "F#",
+            "A",
+            "E",
+            "F#"
         ]
     }
+
 ]
