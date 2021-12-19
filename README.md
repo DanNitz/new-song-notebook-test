@@ -17,7 +17,7 @@ Overall Summary:
  3. then run 'npm start' to get the app/server up and running
  4. Open up the songlibrary.html in your browser
 
- My steps through through designing this project:
+ My steps through designing this project:
  1. Get the API and server running to display a list of my songs from songs.json
  2. Add a functions that will search out a particular song by its id, set, tuning, cover or original (co), and or name
  3. Add an insert method to be able to input new songs
@@ -44,7 +44,7 @@ My lofty goals for down the road
  7. Datestamps/logs for when songs were originally created and edited for record keeping
  8. Add a dark/light format toggle switch
 
-Thanks for checking my project out!
+Thanks for checking out my project!
 
 
  
