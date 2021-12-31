@@ -14,9 +14,16 @@ Overall Summary:
  Getting the app Started:
  1. Navigate into the new-song-test folder 'cd new-song-test'
  2. then run 'npm install' to install dependencies
- 3. then run 'npm start' to get the app/server up and running
- 4. Open up the songlibrary.html in your browser
+ 3. then run 'npm run open' to load the songlibrary.html in browser
+ 4. then run 'npm start' to get the app/server up and running
 
+
+ My Feature list requirement checklist:
+ 1. Read and parse an external file (such as JSON) into my application and display the data in my app.
+ 2. Create an array, dictionary or list, populate it with multiple values, retrieve at least one value, and use or display it in your application.
+ 3. Create a web server with at least one route and connect to it from my application using ExpressJS
+ 4. I also created multiple custom functions to get songs by specific set lists and displaying all songs and handling my xhr requests
+ 
  My steps through designing this project:
  1. Get the API and server running to display a list of my songs from songs.json
  2. Add a functions that will search out a particular song by its id, set, tuning, cover or original (co), and or name
