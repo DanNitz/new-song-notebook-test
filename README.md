@@ -12,7 +12,7 @@ Overall Summary:
  Get All Songs & Set 1-5 Buttons
 
  Getting the app Started:
- 1. Navigate into the new-song-test folder 'cd new-song-test'
+ 1. Open up a terminal in the project folder
  2. then run 'npm install' to install all dependencies
  3. then run 'npm start' to get the app/server/client up and running
  4. client is on http://localhost:5000  and api is on http://localhost:5000/api 
