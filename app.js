@@ -4,6 +4,12 @@ const app = express();
 const songRepo = require('./repos/songRepo');
 let cors = require('cors');
 
+//add the get static html/files middleware
+app.get("/", function (req, res) {
+    res.sendFile(__dirname + "/public/songlibrary.html");
+});
+app.use(express.static('public'));
+
 //use the express router object for endpoints
 const router = express.Router();
 
@@ -188,4 +194,5 @@ app.use(function (err,req,res,next){
 //last thing to do to get server running - create server to listen on port 5000
 const server = app.listen(5000, function (){
     console.log('Node server is running on http://localhost:5000/api..');
+    console.log('Client is being served on http://localhost:5000');
 });
