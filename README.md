@@ -13,10 +13,9 @@ Overall Summary:
 
  Getting the app Started:
  1. Navigate into the new-song-test folder 'cd new-song-test'
- 2. then run 'npm install' to install dependencies
- 3. then run 'npm run open' to load the songlibrary.html in browser
- 4. then run 'npm start' to get the app/server up and running
-
+ 2. then run 'npm install' to install all dependencies
+ 3. then run 'npm start' to get the app/server/client up and running
+ 4. client is on http://localhost:5000  and api is on http://localhost:5000/api 
 
  My Feature list requirement checklist:
  1. Read and parse an external file (such as JSON) into my application and display the data in my app.
