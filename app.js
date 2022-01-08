@@ -6,7 +6,7 @@ let cors = require('cors');
 
 //add the get static html/files middleware
 app.get("/", function (req, res) {
-    res.sendFile(__dirname + "/public/songlibrary.html");
+    res.sendFile(__dirname + "/public/index.html");
 });
 app.use(express.static('public'));
 
