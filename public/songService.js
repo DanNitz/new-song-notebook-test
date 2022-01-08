@@ -44,6 +44,35 @@ function getSet(setNumber){
     req.open("GET", URL);
     req.send();
 }
+
+//xhr request and function getting originals vs. covers
+function getOriginalsOrCovers(originalOrCover){
+    console.log("GET Original Songs");
+
+    let req = new XMLHttpRequest();
+    req.onreadystatechange = function () {
+        if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+            let response = JSON.parse(this.response);
+            console.log(response);
+            let songsArr = response.data.filter(function(song){
+                if(song.co === originalOrCover){
+                    return true;
+                }
+                else {
+                    return false;
+                }
+            });
+            console.log(songsArr);
+            displayAllSongs(songsArr);        
+        }
+    };
+    req.open("GET", URL);
+    req.send();
+}
+
+
+
+
 //check debug on dev tools for scope reference
 //breakpoints on dev tools is a good way for me to visualize what is going on
 //my displayAllSongs function 
