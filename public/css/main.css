@@ -24,7 +24,7 @@ ul {
 
 footer {
     min-height: 6.25rem;
-    background-color: #096;
+    background-color: rgb(30, 30, 30);
 }
 
 button {
@@ -33,20 +33,21 @@ button {
     padding-left: 1em;
     padding-right: 1em;
     border-radius: 5px;
-    background: #096;
+    background: #376656;
     color: white;
 }
 
 button:hover {
-    box-shadow: .2em .2em .8em #669;
+    box-shadow: .1em .1em .8em rgb(255, 255, 255);
     background: white;
-    color: #096;
+    color: #376656;
 }
 
 /* Wrapper */
 
 .wrapper {
     flex: 1 0 auto;
+    background-color: rgb(0,0,0);
 }
 
 
@@ -60,9 +61,20 @@ button:hover {
 
 .green {color: #096;}
 
+.gray-fill {background: rgb(30, 30, 30);}
+.blk-fill {background: rgb(0, 0, 0);}
+
 .bx-sdw {box-shadow: .2em .5em .8em #669;}
 
 .bd-rad {border-radius: 5px;}
+
+.black-box {
+    display: block;
+    margin: 1em 3em;
+    text-align: center;
+    border: solid .75em rgb(0, 0, 0);
+    border-radius: 2em;
+}
 
 /* Navigation */
 
@@ -78,7 +90,7 @@ button:hover {
 }
 
 .navigation li {
-    background: #096;
+    background: rgb(0, 0, 0);
     border: solid 5px white;
     max-width: 40%;
     margin: 0 auto .5em;
@@ -95,12 +107,12 @@ button:hover {
 
 .navigation li a:hover {
     background-color: white;
-    color: #096;
+    color: rgb(0, 0, 0);
 }
 
 .nav-header {
-  background-color: #096;
-  box-shadow: 0 .3em .8em #669;
+  background-color: rgb(30, 30, 30);
+  box-shadow: 0 .1em .8em rgb(255, 255, 255);
   z-index: 100;
 }
 
@@ -117,7 +129,7 @@ button:hover {
 
 .col-2 {
     font-size: .9rem;
-    color: #096;
+    color: rgb(255, 255, 255);
     text-align: center;
     margin: auto;
     width: 80%;
@@ -125,21 +137,9 @@ button:hover {
 
 /* adding a new song to database */
 
-.black-box {
-    display: block;
-    margin: 1em 3em;
-    text-align: center;
-    border: solid .75em rgb(0, 0, 0);
-    border-radius: 0em;
-    background-color: #e7eae9;
-}
-
-#newSongInput {margin: 1em;}
-#editSongInput {margin: 1em;}
-
-.add-song button {margin: 1em;}
-
 /*
+
+
 =======================
 About Page
 =======================
