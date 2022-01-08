@@ -9,7 +9,7 @@ Overall Summary:
  This will be a Song Writing app to create, organize, save, and edit songs. I would also like to implement a display format for the songs that will be clean and easy to read as if I were using these as reference sheets for gigs (say a dark bar, or poorly lit stage). So in essence, I aim to make the information easy to store, save, edit, and display in a way that is intuitive to playing a fast paced gig in a less than optimal setting. Also I am not proficient in sheet music as with most of the musicians I play with, so this will be a great way to help give my fellow bandmates and myself a quick frame of reference for our songs.
 
  Currently Operational --
- Get All Songs & Set 1-5 Buttons
+ Get All Songs, Set 1-5 Buttons, Original and Cover Buttons 
 
  Getting the app Started:
  1. Open up a terminal in the project folder
