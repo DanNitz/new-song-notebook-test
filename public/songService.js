@@ -47,7 +47,7 @@ function getSet(setNumber){
 
 //xhr request and function getting originals vs. covers
 function getOriginalsOrCovers(originalOrCover){
-    console.log("GET Original Songs");
+    console.log("GET Original or Cover Songs");
 
     let req = new XMLHttpRequest();
     req.onreadystatechange = function () {
@@ -70,9 +70,6 @@ function getOriginalsOrCovers(originalOrCover){
     req.send();
 }
 
-
-
-
 //check debug on dev tools for scope reference
 //breakpoints on dev tools is a good way for me to visualize what is going on
 //my displayAllSongs function 
@@ -88,10 +85,11 @@ function displayAllSongs(songsArr){
     //create elements, add context, append to dom
     let container = document.createElement("div");
     let name = document.createElement("h1");
-    let set = document.createElement("div");
-    let tuning = document.createElement("div");
-    let co = document.createElement("div");
+    let set = document.createElement("h3");
+    let tuning = document.createElement("p");
+    let co = document.createElement("h3");
     let intro = document.createElement("div");
+    let br = document.createElement("br");
 
     name.innerText = song.name;
     set.innerText = song.set;
@@ -99,7 +97,7 @@ function displayAllSongs(songsArr){
     co.innerText = song.co;
     intro.innerText = song.intro;
 
-    container.append(name, set, tuning, co, intro);
+    container.append(name, set, co, tuning, intro, br);
     listElement.append(container);
 
    });
