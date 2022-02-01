@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Notebook | Add New Song</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
+    <!-- CSS Links     -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="nav-header">
+        <a href="index.html"><img class="logo" src=""></a>
+        <nav>
+            <ul class="navigation">
+                <li><a href="">Add New Song</a></li>
+                <li><a href="#">Edit Song</a></li>
+                <li><a href="index.html">Song Library</a></li>
+                <li><a href="#">Delete Song</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="wrapper">
+        <!-- main-content (if i want to add anything above my controls) -->
+        <div class="main-content">
+            <div class="col-1">
+            </div>
+            <div class="col-2">
+            <h2 class="thin"></h2>
+            </div>
+        </div>
+        <!-- Form inputs for adding a new song  -->
+        <div class="black-box gray-fill">
+            <h1 class="white blk-fill">Add New Song</h1>
+            <div class="white">
+                <div id="add-new-song">
+                    <form>
+                        <label>Cover or Original:</label>
+                        <input type="text" id="c-o" placeholder="Original" name="c-o" required>
+                        <label>Song Name:</label>
+                        <input type="text" id="song-name" placeholder="The Lighthouse..." name="song-name" required>
+                        <label>Intro:</label>
+                        <input type="text" id="intro" placeholder="C#(m)inor, F#(M)ajor, G#m etc..." name="intro" required>
+                        <label>PreVerse:</label>
+                        <input type="text" id="preverse" name="preverse">
+                        <label>Verse:</label>
+                        <input type="text" id="verse" name="verse" required>
+                        <label>PreChorus:</label>
+                        <input type="text" id="prechorus" name="prechorus">
+                        <label>Chorus:</label>
+                        <input type="text" id="chorus" name="intro" required>
+                        <label>Solos:</label>
+                        <input type="text" id="solos" name="solos">
+                        <label>Bridge:</label>
+                        <input type="text" id="bridge" name="bridge">
+                        <label>Transfers:</label>
+                        <input type="text" id="transfers" name="transfers">
+                        <label>Outro:</label>
+                        <input type="text" id="outro" name="outro">
+                        <label>Any other notes</label>
+                        <textarea placeholder="Specific instrumentations, tunings, tempos, capos etc..."></textarea>
+                        <button onclick="" type="submit" id="form-btn">SUBMIT SONG</button>
+                    </form>
+                </div>
+                <!-- this could be a ul tag, and songs li  -->
+                <div id="song-display" class="black-box">
+                <!--  maybe show the submitted song format here?   -->
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- /wrapper    -->
+    <footer>
+        <span id="copyright" class="thin">&copy; 2022 Song Notebook</span>
+       <!-- if i want to add img footer links later
+        <a href="" target="_blank"><img class="icn fb" src="imgs/fbookicon.png" alt="facebook"></a>
+        <a href="" target="_blank"><img class="icn insta" src="imgs/instaicon.png" alt="instagram"></a>
+       -->
+    </footer>
+
+    <script src=""></script>
+</body>
+
+</html>

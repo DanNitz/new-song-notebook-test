@@ -91,7 +91,7 @@ button:hover {
 
 .navigation li {
     background: rgb(0, 0, 0);
-    border: solid 5px white;
+    border: solid 1px white;
     max-width: 40%;
     margin: 0 auto .5em;
     border-radius: 5px;
@@ -247,20 +247,25 @@ input,textarea,label{
     padding: .75em;
     width: 100%;
     border-radius: 1em;
+    text-align: center;
 }
 
 input {
+   color:rgb(218, 218, 218) ; 
+   background-color: rgb(12, 12, 12); 
    width: 100% 
 }
 
 textarea{
+    color: rgb(218, 218, 218); 
+    background-color: rgb(12, 12, 12);
     margin-bottom: 1em;
 }
 
 label {
     font-weight: 400;
     padding: .75em 0;
-    color: #096
+    color: #376656
 }
 
 .main-content-contact {
